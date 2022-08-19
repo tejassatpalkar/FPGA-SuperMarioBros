@@ -1,0 +1,109 @@
+
+State Machine - |lab62|dynamic_goomba:whichGoomba|curr_state
+Name curr_state.TWO 
+curr_state.ONE 0 
+curr_state.TWO 1 
+
+State Machine - |lab62|goombaPos:gpos|gsm:goomba_state|curr_state
+Name curr_state.RIGHT curr_state.STILL2 curr_state.LEFT curr_state.STILL1 
+curr_state.STILL1 0 0 0 0 
+curr_state.LEFT 0 0 1 1 
+curr_state.STILL2 0 1 0 1 
+curr_state.RIGHT 1 0 0 1 
+
+State Machine - |lab62|goomba:goom|curr_state
+Name curr_state.OFF 
+curr_state.ON 0 
+curr_state.OFF 1 
+
+State Machine - |lab62|dynamic_sprite:whichMario|curr_state
+Name curr_state.THIRD curr_state.SECOND curr_state.FIRST curr_state.STANDING 
+curr_state.STANDING 0 0 0 0 
+curr_state.FIRST 0 0 1 1 
+curr_state.SECOND 0 1 0 1 
+curr_state.THIRD 1 0 0 1 
+
+State Machine - |lab62|game_state:game_over|curr_state
+Name curr_state.WIN curr_state.OFF curr_state.ON curr_state.START 
+curr_state.START 0 0 0 0 
+curr_state.ON 0 0 1 1 
+curr_state.OFF 0 1 0 1 
+curr_state.WIN 1 0 0 1 
+
+State Machine - |lab62|super_mario:super_mario_machine|curr_state
+Name curr_state.BIG 
+curr_state.LITTLE 0 
+curr_state.BIG 1 
+
+State Machine - |lab62|mushroom:mushroom_machine|curr_state
+Name curr_state.OFF 
+curr_state.ON 0 
+curr_state.OFF 1 
+
+State Machine - |lab62|ball:lonzo|jump:mario_jump|curr_state
+Name curr_state.JUMP20 curr_state.JUMP19 curr_state.JUMP18 curr_state.JUMP17 curr_state.JUMP16 curr_state.JUMP15 curr_state.JUMP14 curr_state.JUMP13 curr_state.JUMP12 curr_state.JUMP11 curr_state.JUMP10 curr_state.JUMP9 curr_state.JUMP8 curr_state.JUMP7 curr_state.JUMP6 curr_state.JUMP5 curr_state.JUMP4 curr_state.JUMP3 curr_state.JUMP2 curr_state.JUMP1 curr_state.GROUND 
+curr_state.GROUND 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.JUMP1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.JUMP2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.JUMP3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.JUMP4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.JUMP5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.JUMP6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.JUMP7 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.JUMP8 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.JUMP9 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP10 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP11 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP12 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP13 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP14 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP15 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP16 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP17 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP18 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP19 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.JUMP20 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |lab62|lab62_soc:u0|lab62_soc_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |lab62|lab62_soc:u0|lab62_soc_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |lab62|lab62_soc:u0|lab62_soc_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |lab62|lab62_soc:u0|lab62_soc_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |lab62|lab62_soc:u0|lab62_soc_nios2_gen2_0:nios2_gen2_0|lab62_soc_nios2_gen2_0_cpu:cpu|lab62_soc_nios2_gen2_0_cpu_nios2_oci:the_lab62_soc_nios2_gen2_0_cpu_nios2_oci|lab62_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab62_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab62_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab62_soc_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

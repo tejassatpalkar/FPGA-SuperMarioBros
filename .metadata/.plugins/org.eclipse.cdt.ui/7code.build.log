@@ -1,0 +1,6 @@
+22:42:10 **** Clean-only build of configuration Nios II for project 7code ****
+make clean 
+[7code clean complete]
+
+22:42:11 Build Finished (took 751ms)
+

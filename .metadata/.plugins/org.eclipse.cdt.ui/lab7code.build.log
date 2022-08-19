@@ -1,0 +1,9 @@
+23:03:27 **** Incremental Build of configuration Nios II for project lab7code ****
+make all 
+Info: Building ../lab7code_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab7code_bsp/
+[BSP build complete]
+[lab7code build complete]
+
+23:03:28 Build Finished (took 1s.105ms)
+

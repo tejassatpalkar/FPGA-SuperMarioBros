@@ -1,0 +1,55 @@
+module game_state (input logic Clk, Reset, initGameOver,
+//                 input logic Ball_X_Pos, 
+//             output int X_Velocity, 
+			 output logic gameover);
+			 
+			 //Two-always example for state machine
+//Moore Machine
+     
+    enum logic [1:0] {ON, OFF} curr_state, next_state; // States
+
+    always_ff @ (posedge Clk or posedge Reset) // frame_clk
+    begin
+        if (Reset)
+            curr_state <= ON;
+        else 
+            curr_state <= next_state;
+    end
+    
+    always_comb
+    begin
+        
+        next_state  = curr_state;    
+        unique case (curr_state) 
+
+            ON: if (initGameOver)
+                    next_state = OFF;
+                                
+                OFF:
+                    next_state = OFF;
+
+        endcase
+
+        case (curr_state) 
+          
+            ON: 
+            begin
+            
+                    gameover = 0;                    
+            end
+                
+            OFF: 
+            begin
+						
+                    gameover = 1;
+					 
+                    
+            end
+                
+        endcase
+    end
+endmodule 
+			 
+
+
+					

@@ -1,0 +1,5 @@
+module  goomba ( input Reset, frame_clk, prev_last_direction,
+					input [7:0] keycode, keycode2,
+					input logic [39:0] grid [30], 
+					output current_jump, eighth_frame_clk, last_direction,
+               output [9:0]  BallX, BallY );

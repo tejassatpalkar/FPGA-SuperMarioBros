@@ -1,0 +1,4 @@
+struct {
+	logic [9:0]  x, y
+	
+} sprite_position
